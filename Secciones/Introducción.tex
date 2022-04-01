@@ -1,0 +1,76 @@
+\justifying
+El alfabeto fonético internarcional es un sistema de notación fonética creado por lingüistas con el proposito de establecer de forma regularizada, precisa y única, la representación de los sonidos del habla de cualquier lengua. Bajo este esquema alfabético, el español se caracteriza por contar con 22 fonemas descritos en este, y que se dividen en 19 consonánticos y 5 vocálicos.
+
+\hfill \break
+\justifying
+Los 5 vocálicos corresponden a los fonemas /a/, /e/, /i/, /o/, /u/.
+
+\hfill \break
+\justifying
+Los fonémas consonánticos a pesar de contabilizarse 19, en realidad son utlizados en el español de México únicamente 17, siendo estos 2 fonémas de uso común únicamente en regiones específicas: /\includegraphics[width=6pt]{Imagenes/fricativa_dental_sorda.png}/ (también comunmente utilizado en el idioma inglés) y /\includegraphics[width=6pt]{Imagenes/aproximante_lateral_palatal.png}/ (también comunmente utilizado en el idioma italiano).
+
+\begin{figure}[!h]
+	\centering
+	\begin{tabular}{c | p{5.5cm} | p{4.5cm}}
+		Fonema 	& \hfil Orden \hfil 						& \hfil Ortográfico \hfil \\
+				&								& \\ \hline
+				&								& \\
+		/m/		& Nasal Bilabial Sonora				& m \\
+		/n/		& Nasal Alveolar Sonora				& n \\
+		/\includegraphics[width=5pt]{Imagenes/nasal_palatal.png}/		& Nasal Palatar Sonora				& ñ \\
+		/p/		& Oclusiva Bilabial Sorda			& p \\
+		/b/		& Oclusiva Bilabial Sonora			& b \\
+		/t/		& Oclusiva Dental Sorda				& t \\
+		/d/		& Oclusiva Dental Sonora			& d \\
+		/k/		& Oclusiva Velar Sorda				& c+a,o,u ; qu+e,i ; k \\
+		/g/		& Oclusiva Velar Sonora				& g+a,o,u ; gu+e,i \\
+		/f/		& Fricativa Labiodental Sorda		& f \\
+		/s/		& Fricativa Alveolar Sorda			& s \\
+		/\includegraphics[width=7pt]{Imagenes/fricativa_palatal_sonora.png}/		& Fricativa Palatal Sonora			& y ; hi+vocal ; ll \\
+		/x/		& Fricativa Velar Sorda				& j+a,e,i,o,u ; g+e,i \\
+		/\includegraphics[width=6pt]{Imagenes/africada_postalveolar_sorda.png}/		& Africada Postalveolar Sorda		& ch \\
+		/r/		& Vibrante Múltiple Alveolar Sonora	& rr ; r-(posición inicial o precedida de l, n, s) \\
+		/\includegraphics[width=5pt]{Imagenes/vibrante_alveolar_simple.png}/		& Vibrante Simple Alveolar Sonora	& r(no inicial ni precedidad de n, l, s) \\
+		/l/		& Aproximante Lateral Alveolar Sonora& l
+	\end{tabular}
+	\label{Tabla_fonemas}
+	\caption{Los 17 fonémas básicos considerados en la implementación del sistema para su reproducción sonora}
+\end{figure}
+
+\hfill\break
+\hfill\break
+\justifying
+El idioma español a su vez como lenguaje escrito, cuenta con un total de 27 símbolos alfabéticos utilizados para la escritura de las palabras, además de 3 compuestos por 2 letras combinadas(rr, ch, ll) que también cuentan con un fonema específico asociado. Aún cuando no es homogeneamente aplicable la asociación de un fonema a cada letra, al menos 11 de los fonemas totales usados en español, tienen una correspondencia directa con una letra y el ch, cuando estas son pronunciadas oralmente.
+\hfill\break
+\justifying
+Aunado a estas correspondencias, se hace notar que el símbolo h, letra muda en español, no requiere representación como patrón dentro del sencillo lenguaje motriz que se desarrollará, así como también se omitirá la asociación directa de algunas letras por multiple fonética contextual a la posición y combinación de otras letras en las palabras.
+\hfill\break
+\hfill\break
+\justifying
+De forma intuitiva para la mayor parte de la población(cerca del 95\% de la población que es alfabeta en México) la asociación de la pronunciación de las letras en las palabras, es natural mediante la relación en su representación escrita, siendo mucho más complejo un desglose directo en los fonémas que la compone, inclusive podría describirse como imposible por el desconocimiento del colectivo general de una representación estandarizada de los sonidos, marco que es propuesto por el Alfabeto Fonético Internacional.
+\hfill\break
+\justifying
+Con este hecho en mente, la ortografía de las palabras será utilizada como interfaz para describir la palabra, o directamente los sonidos, que el usuario desea expresar.
+\hfill\break
+\justifying
+La creación de un sencillo lenguaje codificado en un contexto de patrones de movimiento, le servirá al usuario para indicar el sonido que desea sea reproducido.
+
+\hfill\break
+\justifying
+Probablemente el referente más cercano e inmediato a este sencillo lenguaje con el que podría ser comparado, es el LSM(Lenguaje de Señas Mexicano), sin embargo, y aún cuando este trabajo tiene el objetivo común de permitir la comunicación principalmente de una comunidad con impedimento del habla, difiere primordialmente en algunos aspectos: 
+
+\begin{itemize}
+	\item El LSM es un lenguaje que requiere para su expresión el involucramiento de gestos con movimiento desde encima de la cabeza y hasta debajo de la cadera, incluyendo movimiento de manos, expresiones faciales y mirada intencional. Por su parte el lenguaje motriz que se propondrá se limita únicamente a 1 mano, donde se colocará el SoC para el sensado.
+	
+	\item La interpretación de ambos lenguajes se realiza en dominios sensoriales humanos distintos. Completamente visual para el LSM, y parcialmente visual para el lenguaje propuesto, pero principalmente auditivo.
+	
+	\item Otra diferencia importante se encuentra en la complejidad y relación con el idioma español. Mientras el LSM cuenta con una rica y compleja gramática, y vocabulario abundante, también existe desacoplado de la estructura, gramática y normas propias del español. El enfoque principal del lenguaje que se propondrá, es la expresión de palabras y letras del español, sobrepasando sus capacidades la formulación de normas gramaticales o vocabulario propio, fungiendo únicamente como un simplificado codificado motriz para la expresión sonora del español.
+	
+	\item Finalmente su implementación, aún cuando es común para las personas con impedimento del habla u afecciones relacionadas a la expresión oral, el LSM brinda mayores posibilidades para la población sordo-muda. Mientras tanto el prototipo de este trabajo podrá ser poco beneficioso para la población sordo-muda frente al LSM, pero propone una alternativa para la comunicación(dentro de los límites de este trabajo, aún unilateral) entre personas con impedimento del habla hacia la población con afecciones relacionadas a la percepción visual.
+\end{itemize}
+
+
+
+
+
+

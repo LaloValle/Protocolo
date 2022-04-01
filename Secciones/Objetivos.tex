@@ -1,0 +1,20 @@
+\hfill\break 
+Objetivo general: \hfill\break
+Crear un sistema embebido que opere en conjunto a un prototipo de guante sensor, utilizado para el muestreo de los patrones de movimiento en una mano, que realice el procesamiento y clasificación de los patrones, para la reproducción sonora del fonema o palabra completa en español asociados al movimiento ejecutado.
+
+\hfill\break
+Objetivos específicos:	
+\begin{enumerate}
+	
+	\item \justifying Ensamblar el prototipo de guante sensor implementando el SoC micro:bit como dispositivo microcontrolador y sensor del cambio de aceleraciones con el acelerómetro integrado. Añadiendo 1 sensor táctil usado para inidicar el inicio y fin del muestreo de un movimiento.
+
+	\item \justifying Muestrear y preprocesar los patrones tridimensionales utilizando el SoC micro:bit.
+	
+	\item \justifying Comunicar y transmitir los patrones muestreados a través de Bluetooth entre el SoC micro:bit y el mini PC RaspberryPi 4.
+	
+	\item \justifying Clasificar los patrones de movimiento utilizando un modelo de \textit{Deep Learning} y el algoritmo DTW(\textit{Dynamic Time Warping}).
+	
+	\item \justifying Concatenar las asociaciones de los movimientos para convertirlos en una cadena textual que pueda ser interpretada por el servicio en la nube de \textit{Text-to-speech}
+	
+	\item \justifying Reproducir el audio resultante del servicio en la nube mediante la tarjeta de sonido WM8960 de Waveshare.
+\end{enumerate}
