@@ -1,6 +1,5 @@
 \documentclass[10pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
 \usepackage[top=1.2cm,bottom=1.5cm,left=1.2cm, right=1.2cm,bindingoffset=0.6cm]{geometry}
 
 % Fuente Times New Roman
@@ -11,9 +10,7 @@
 \usepackage{graphicx}
 % Justificar texto
 \usepackage{ragged2e}
-% BibLaTex
-\usepackage{biblatex,csquotes}
-\addbibresource{Referencias.bib}
+% Biblatex
 % Multiple columns
 \usepackage{multicol,blindtext}
 % Array package for tables
@@ -28,10 +25,11 @@
 
 \hfill\break
 \justifying
-\textbf{Resumen} - Creación de un sistema embebido basado en RaspberryPi que utiliza el SoC Micro Bit de la BBC como dispositivo sensor, y la tarjeta de sonido adaptada para sistemas RaspberryPi, WM8960 de Waveshare, para la reproducción de los fonemas. La tarjeta Micro Bit se coloca sobre el dorso de la mano permitiendo identificar los movimientos realizados con esta al aprovecharse el sensor de acelerómetro integrado, mientras la transmisión de su recopilación se logra mediante conexión Bluetooth. Los datos adquiridos son procesados con un algoritmo de clasificación basado en \textit{Deep Learning} y DTW(\textit{Dynamic Time Warping}), que permitirpa calcular la coincidencia óptima entre la secuencia recopilada y las secuencias modelos correspondientes a cada fonema para su correcta identificación y finalmente reproducción sonora.
+\textbf{Resumen} - 
+% Creación de un sistema embebido basado en RaspberryPi que utiliza el SoC Micro Bit de la BBC como dispositivo sensor, y la tarjeta de sonido adaptada para sistemas RaspberryPi, WM8960 de Waveshare, para la reproducción de los fonemas. La tarjeta Micro Bit se coloca sobre el dorso de la mano permitiendo identificar los movimientos realizados con esta al aprovecharse el sensor de acelerómetro integrado, mientras la transmisión de su recopilación se logra mediante conexión Bluetooth. Los datos adquiridos son procesados con un algoritmo de clasificación basado en \textit{Deep Learning} y DTW(\textit{Dynamic Time Warping}), que permitirpa calcular la coincidencia óptima entre la secuencia recopilada y las secuencias modelos correspondientes a cada fonema para su correcta identificación y finalmente reproducción sonora.
 
 \hfill \break
-\textbf{Palabras clave} - Algoritmo DTW(\textit{Dynamic Time Warping}), \textit{Deep Learning}, Reproducción de voz, Sistemas Embebidos
+\textbf{Palabras clave} - Afectaciones del habla, \textit{Machine Learning}, Sistemas Embebidos, \textit{Text-to-Speech}
 
 \hfill \break
 {\fontsize{12}{14}\textbf{1. Introducción}}
@@ -46,25 +44,35 @@
 
 \hfill \break
 {\fontsize{12}{14}\textbf{3. Justificación}}
+\hfill \break
+\justifying
+\input{Secciones/Justificacion}
 
 \hfill \break
 {\fontsize{12}{14}\textbf{4. Productos o Resultados esperados}}
+\hfill \break
+\justifying
+\input{Secciones/Productos_Resultados_esperados}
 
 \hfill \break
 {\fontsize{12}{14}\textbf{5. Metodología}}
+\hfill \break
+\justifying
+\input{Secciones/Metodologia}
 
+\hfill \break
+\hfill \break
+\hfill \break
 \hfill \break
 {\fontsize{12}{14}\textbf{6. Cronograma}}
 
-\hfill \break
 
 \newpage
-
+\hfill \break
 {\fontsize{12}{14}\textbf{7. Referencias}}
 
-\printbibliography
-
 \hfill \break
+\input{Secciones/Referencias}
 
 \newpage
 

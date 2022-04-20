@@ -1,6 +1,6 @@
 \hfill\break 
 Objetivo general: \hfill\break
-Crear un sistema embebido que opere en conjunto a un prototipo de guante sensor, utilizado para el muestreo de los patrones de movimiento en una mano, que realice el procesamiento y clasificación de los patrones, para la reproducción sonora del fonema o palabra completa en español asociados al movimiento ejecutado.
+Creación de un sistema embebido que opere en conjunto a un prototipo de guante sensor utilizado para el muestreo de los patrones de movimiento en una mano, comunicando los patrones a un microcomputador Raspberry que será el encargado del procesamiento y clasificación de los patrones con técnicas de \textit{Machine Learning}, y alojando o solicitando los servicios para la reproducción sonora del texto que identifique al fonema o palabra completa en español asociados al movimiento ejecutado.
 
 \hfill\break
 Objetivos específicos:	
@@ -12,7 +12,7 @@ Objetivos específicos:
 	
 	\item \justifying Comunicar y transmitir los patrones muestreados a través de Bluetooth entre el SoC micro:bit y el mini PC RaspberryPi 4.
 	
-	\item \justifying Clasificar los patrones de movimiento utilizando un modelo de \textit{Deep Learning} y el algoritmo DTW(\textit{Dynamic Time Warping}).
+	\item \justifying Clasificar los patrones de movimiento utilizando un modelo de \textit{Machine Learning}.
 	
 	\item \justifying Concatenar las asociaciones de los movimientos para convertirlos en una cadena textual que pueda ser interpretada por el servicio en la nube de \textit{Text-to-speech}
 	
