@@ -1,6 +1,7 @@
-\documentclass[10pt]{report}
+\documentclass[10.5pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage[top=1.2cm,bottom=1.5cm,left=1.2cm, right=1.2cm,bindingoffset=0.6cm]{geometry}
+\usepackage{nopageno}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,bindingoffset=0.6cm]{geometry}
 
 % Fuente Times New Roman
 \usepackage{newtxtext,newtxmath}
@@ -25,8 +26,7 @@
 
 \hfill\break
 \justifying
-\textbf{Resumen} - 
-% Creación de un sistema embebido basado en RaspberryPi que utiliza el SoC Micro Bit de la BBC como dispositivo sensor, y la tarjeta de sonido adaptada para sistemas RaspberryPi, WM8960 de Waveshare, para la reproducción de los fonemas. La tarjeta Micro Bit se coloca sobre el dorso de la mano permitiendo identificar los movimientos realizados con esta al aprovecharse el sensor de acelerómetro integrado, mientras la transmisión de su recopilación se logra mediante conexión Bluetooth. Los datos adquiridos son procesados con un algoritmo de clasificación basado en \textit{Deep Learning} y DTW(\textit{Dynamic Time Warping}), que permitirpa calcular la coincidencia óptima entre la secuencia recopilada y las secuencias modelos correspondientes a cada fonema para su correcta identificación y finalmente reproducción sonora.
+\textbf{Resumen} - Las afectaciones del habla en adultos mayores suelen originarse después de una lesión o accidente comunmente con daño cerebral en el lóbulo izquierdo, limitando o completamente impidiendo la correcta comunicación verbal de las personas. Este proyecto propone un prototipo de \textit{wearable} y sistema embebido como herramienta de apoyo para pacientes con afectación del habla mediante la traducción de un sencillo lenguaje motriz con una mano a letras, sílabas y palabras, primero en texto y finalmente reproduciendo en audio como discurso.
 
 \hfill \break
 \textbf{Palabras clave} - Afectaciones del habla, \textit{Machine Learning}, Sistemas Embebidos, \textit{Text-to-Speech}
@@ -54,15 +54,14 @@
 \justifying
 \input{Secciones/Productos_Resultados_esperados}
 
+\newpage
 \hfill \break
 {\fontsize{12}{14}\textbf{5. Metodología}}
 \hfill \break
 \justifying
 \input{Secciones/Metodologia}
 
-\hfill \break
-\hfill \break
-\hfill \break
+\newpage
 \hfill \break
 {\fontsize{12}{14}\textbf{6. Cronograma}}
 

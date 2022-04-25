@@ -12,7 +12,7 @@ A nivel oral, expresamos el lenguaje mediante el habla, alcanzado en algún punt
 
 \hfill \break
 \justifying
-Es entonces sencillo visualizar la importancia del lenguaje, resaltando especificamente el lenguaje oral como tema de estudio en este trabajo, pues es la herramienta cotidiana utilizada por la gran mayoría de las personas para la comunicación e interacción social. Contrastado por un porcentaje muy mayor de personas que no cuentan con ninguna circunstancia que le impida el habla, un sector de la población en la sociedad se ve limitado en el aprovechamiento de este recurso humano(Siendo 2,234,303 personas, un aproximado del 1.76\% de la población total en México para el Censo 2020 para personas con dificultades o discapacidad para hablar o comunicarse[6]), originado por trastornos y afecciones que dificultan, o incluso impiden e imposibilitan, que una persona tenga la capacidad de expresarse de manera oral mediante el habla.
+Es entonces sencillo visualizar la importancia del lenguaje, resaltando especificamente el lenguaje oral como tema de estudio en este trabajo, pues es la herramienta cotidiana utilizada por la gran mayoría de las personas para la comunicación e interacción social. Contrastado por un porcentaje muy mayor de personas que no cuentan con ninguna circunstancia que le impida el habla, un sector de la población en la sociedad se ve limitado en el aprovechamiento de este recurso humano(Siendo 2,234,303 personas, un aproximado del 1.76\% de la población total en México para el Censo 2020 para personas con dificultades o discapacidad para hablar o comunicarse[6]), originado por trastornos y afecciones que dificultan, o incluso impiden e imposibilitan, que una persona tenga la capacidad de expresarse verbalmente.
 Entre las afecciones más habituales se encuentran 3 de ellas que podrían verse beneficiadas por el uso de la solución propuesta en este trabajo.
 
 \hfill \break
@@ -41,15 +41,15 @@ Anteriormente se han desarrollados trabajos de titulación enfocados en sistemas
 
 \hfill \break
 \justifying
-Similar al trabajo anterior, pero empleando técnicas de Visión Artificial o Visión por Computadora, el trabajo "Sistema de comunicación auditiva para personas con problemas del habla"[2], utiliza la tecnología infrarroja del dispositivo Kinect desarrollado por Microsoft para la obtención de imágenes con las que al aplicarse un algoritmo de clasificación de característica de la familia de \textit{Random Forest} y \textit{Mean Shift}, son aplicadas en complemento con un modelo de Redes Neuronales para obtener los resultados de las señales realizadas por el usuario.
+Similar al trabajo anterior, pero empleando técnicas de Visión Artificial o Visión por Computadora, el trabajo "\textit{Sistema de comunicación auditiva para personas con problemas del habla}"[2], utiliza la tecnología infrarroja del dispositivo Kinect desarrollado por Microsoft para la obtención de imágenes con las que al aplicarse un algoritmo de clasificación de características en las familias de \textit{Random Forest} y \textit{Mean Shift}, son implementadas en complemento con un modelo de Redes Neuronales para obtener los resultados de las señales realizadas por el usuario.
 
 \hfill \break
 \justifying
-En el ámbito internacional se han desarrollado trabajos enfocados en miniaturizar y disminuir el hardware necesario en la creación de un \textit{wearable} sensor del movimiento de las manos y los dedos en forma de una pulsera[3]. En este trabajo desarrollado por un equipo de la Universidad de Amrita en la India, utilizan en conjunto un sensor IMU(\textit{Inertial Measurement Unit}) que implementa un sensor acelerómetro y un giroscopio, junto con un arreglo de electrodos EMG(\textit{Electromyography}) que permiten reconocer la contracción de los músculos para el movimiento respectivo de cada dedo.
+En el ámbito internacional se han desarrollado trabajos enfocados en miniaturizar y disminuir el hardware necesario en la creación de un \textit{wearable} sensor del movimiento de las manos y los dedos en forma de una pulsera[3]. En este trabajo desarrollado por un equipo de la Universidad de Amrita en la India, utilizan en conjunto un sensor IMU(\textit{Inertial Measurement Unit}) integra un par de sensores: acelerómetro y giroscopio, junto con un arreglo de electrodos EMG(\textit{Electromyography}) que permiten reconocer la contracción de los músculos para el movimiento respectivo de cada dedo.
 
 \hfill \break
 \justifying
-En otro trabajo realizado por un equipo de 3 investigadores en el \textit{National institute of Technology Puducherry Karaikal India}[4], se propone un prototipo de guante que implementa sensores de flexión, acelerómetro y giroscopio compilando sus mediciones con un Arduino Nano y que permite el envio de la recompilación vía Bluetooth a una PC que corre un algoritmo de ML para la clasificación de los gestos, SVM(\textit{Support Vector Machine}). Este prototipo además permite la identificación de gestos correspondientes al Lenguaje de Señas Americano(ASL) y el Lenguaje de Señas Indio(ISL).
+En otro trabajo realizado por un equipo de 3 investigadores en el \textit{National institute of Technology Puducherry Karaikal India}[4], se propone un prototipo de guante que implementa sensores de flexión, acelerómetro y giroscopio compilando sus mediciones con un Arduino Nano y que permite el envio de la recopilación vía Bluetooth a una PC que corre un algoritmo de ML para la clasificación de los gestos, SVM(\textit{Support Vector Machine}). Este prototipo además permite la identificación de gestos correspondientes al Lenguaje de Señas Americano(ASL) y el Lenguaje de Señas Indio(ISL).
 
 \hfill \break
 \justifying
@@ -57,8 +57,8 @@ De los trabajos realizados y que se encuentran relacionados a la solución que s
 
 \hfill \break
 \justifying
-La solución propuesta es un prototipo decantado por un prototipo físico tipo \textit{wearable}, aunque más sencillo que los mencionados en el sentido del uso de menos hardware, y por lo tanto menos sensores utilizados, aunque aportando mayor portabilidad y sencillez de uso. A pesar de esto, se opta utilizar un lenguaje específico para este trabajo y no utilizando, como comunmente se implementa en estos proyectos, el lenguaje de señas del país.
-Inevitable realizar la comparación del LSM(Lenguaje de Señas Mexicano) con el lenguaje por proponerse, sin embargo, y aún cuando este trabajo tiene el objetivo común de permitir la comunicación principalmente de una comunidad con impedimento del habla, difieren primordialmente en algunos aspectos: 
+La solución propuesta se decanta por un prototipo físico tipo guante \textit{wearable}, aunque más sencillo que los generados por trabajos anteriormente mencionados con un uso limitado de sensores que se traduce en menos hardware, esto aporta a su vez mayor portabilidad y sencillez de uso del prototipo. Se opta también por utilizar un nuevo lenguaje especializado que diverge de los desarrollos que comunmente emplean el lenguaje de señas del país donde se ha investigado.
+De esta manera es inevitable realizar la comparación del LSM(Lenguaje de Señas Mexicano) con el lenguaje por proponerse, sin embargo, y aún cuando este trabajo tiene el objetivo común de permitir la comunicación principalmente de una comunidad con impedimento del habla, difieren primordialmente en algunos aspectos: 
 
 \begin{itemize}
 	\item El LSM es un lenguaje que requiere para su expresión el involucramiento de gestos con movimiento desde encima de la cabeza y hasta debajo de la cadera, incluyendo movimiento de manos, expresiones faciales y mirada intencional. Por su parte el lenguaje motriz que se propondrá se limita únicamente a 1 mano, donde se colocará el SoC para el sensado.
