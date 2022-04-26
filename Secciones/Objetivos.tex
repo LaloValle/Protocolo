@@ -1,20 +1,16 @@
 \hfill\break 
 Objetivo general: \hfill\break
-Creación de un sistema embebido que opere en conjunto a un prototipo de guante sensor utilizado para el muestreo de los patrones de movimiento en una mano, comunicando los patrones a un microcomputador RaspberryPi que será el encargado del procesamiento y clasificación de los patrones con técnicas de \textit{Machine Learning}, y alojando o solicitando los servicios para la reproducción sonora del texto que identifique al fonema o palabra completa en español asociados al movimiento ejecutado.
+Crear un sistema embebido como apoyo a la comunicación a personas con afecciones del habla conformado por un prototipo de \textit{wearable} sensor del movimiento en una mano, un modelo de \textit{Machine Learning} para la clasificación de los patrones y un servicio de \textit{Text-to-Speech} para la reproducción sonora de palabras y frases.
 
 \hfill\break
 Objetivos específicos:	
 \begin{enumerate}
-	
-	\item \justifying Ensamblar el prototipo de guante sensor implementando el SoC micro:bit como dispositivo microcontrolador y sensor del cambio de aceleraciones con el acelerómetro integrado. Añadiendo un sensor de pulso que tiene el objetivo de inidicar el inicio y fin del muestreo de un movimiento.
 
-	\item \justifying Muestrear y preprocesar los patrones tridimensionales utilizando el SoC micro:bit.
+	\item \justifying Idear un conjunto de patrones de movimientos como código motriz que permita al usuario describir letras del alfabeto para la conformación de palabras y frases.
 	
-	\item \justifying Comunicar y transmitir los patrones muestreados a través de Bluetooth entre el SoC micro:bit y el mini PC RaspberryPi 4.
+	\item \justifying Ensamblar el prototipo de guante \textit{wearable} sensor implementando el SoC micro:bit para el cambio de aceleraciones y un sensor de pulso para indicar el inicio y fin del muestreo de un movimiento.
+
+	\item \justifying Identificar un modelo de \textit{Machine Learning} que en conjunto al algoritmo DTW clasifiquen eficientemente los patrones de movimiento a clases alfabéticas.
 	
-	\item \justifying Clasificar los patrones de movimiento utilizando un modelo de \textit{Machine Learning}.
-	
-	\item \justifying Concatenar las asociaciones de los movimientos para convertirlos en una cadena textual que pueda ser interpretada por el servicio en la nube de \textit{Text-to-speech}
-	
-	\item \justifying Reproducir el audio resultante del servicio en la nube mediante la tarjeta de sonido WM8960 de Waveshare.
+	\item \justifying Configurar el servicio local y en la nube de \textit{Text-to-Speech} para la reproducción sonora de las palabras y frases.
 \end{enumerate}

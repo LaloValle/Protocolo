@@ -1,27 +1,45 @@
 \hfill \break
 \justifying
-Inicialmente fue considerada una Metodología de Prototipos, que cuenta con características similares a la metodología final escogida, difieriendo fundamentalmente en la filosofía de un desarrollo acelerado que pueda ofrecer una visión previa del producto, requiriendo una costante integración con el fin de realizar pruebas con los clientes e ir realizando las modificaciones o ajustes necesarios para cumplir con los requisitos dispuestos. Este enfoque aunque práctico, puede facilmente caer en el error de perder de vista los compromisos de calidad y mantenimiento que se acordaron con el cliente, derivado de las pruebas continuas presentadas al cliente rigiendo finalmente el desarrollo por una técnica basada en la prueba y el error.
+El Método en V define un procedimiento para el desarrollo de productos para las TIC, siendo importante mencionar que suele ser un estándar para los proyectos de la Administración Federal alemana y defensa.
+Se trata de un modelo rígido y con una gran cantidad de iteraciones siendo similar al modelo de cascada.
 
 \hfill \break
 \justifying
-Se ha decantado el desarrollo del proyecto por una Metodología basada en Componentes, por la naturaleza modular de la solución y los diferentes nodos y componentes que pueden irse mejorando independiente a la conformación completa del producto. Importante mencionar que el desarrollo independiente de cada componente requiere una definición correcta de los medios de conexión y protocolos de comunicación, facilitando y promoviendo una exitosa integración de todos los componentes.
+El nombre lo toma de su estructura gráfica que suele asemejarse a una letra V, dividiéndose por su parte izquierda en las actividades que descomponen las necesidades y la creación de las especificaciones del sistema. En su parte derecha, se representa la integración de las piezas y su verificación.
 
 \hfill \break
 \justifying
-Este paradigma considera un progreso de forma evolutiva adoptando muchas de las bondades que aporta un modelo en espiral, siendo una de las herramientas más beneficiosas y también las más problemáticas si no se aplican de forma correcta, el análisis de riesgos. La eficiente predicción de riesgos requiere de experiencia y habilidad derivada del conocimiento profundo de la problemática y la solución por aplicarse, lo que requirirá asesoría con especialistas en las tecnologías que se utilizarán y permitiendo disminuír la incertidumbre de la detección errada de los riesgos.
+La implementación de este tipo de modelo aporta una serie de ventajas que son importantes como objetivos a alcanzar en el proyecto. Este modelo aporta una mejora y garantia de la calidad gracias a las medidas de control de calidad firmemente integradas.
+También minimiza los riesgos del proyecto, permitiendo una detección temprana de las desviaciones y riesgos para la mejora de la gestión de los procesos. Otra gran ventaja es la reducción de los gastos totales durante el proyecto y sistema de ciclo de vida, consiguiendose gracias al procesamiento transparente a lo largo de todo el ciclo del producto.
 
 \hfill \break
 \justifying
-Entre los beneficios de la implementación de esta metodología se encuentra la simplificación de pruebas, pues estas son ejecutadas para cada uno de los componenetes antes de ser ensamblados en el conjunto. A su vez esto simplifica el mantenimiento general del sistema, así como su escala y propicia la calidad del sistema completo mejorando continuamente los componentes de forma independiente.
+Aun con todas estas ventajas este modelo puede ser poco flexible a cambios durante el desarrollo, promoviendo un curso lineal del proyecto, sin embargo si el modelo es entendido y se utiliza correctamente es posible utilizar el modelo V para el desarrollo agil.
 
 \hfill \break
 \justifying
-Finalmente resaltar la ventaja que aporta su cualidad incremental respecto a la búsqueda del modelo de aprendizaje automático, asegurando aquel con la mejor precisión de predicción y eficiencia en el desempeño durante su entrenamiento y finalmente la clasificación implementado directamente ya en el sistema embebido.
+El modelo V define el curso del proyecto en fases individuales cada vez más detalladas(Definición del proyecto):
+\begin{itemize}
+	\item \textbf{Fase de especificaciones}: Prevé un análisis de las especificaciones del sistema a grandes rasgos
+	\item \textbf{Fase funcional}: Se complementa el proyecto con requisitos funcionales y no funcionales para la arquitectura del sistema
+	\item \textbf{Fase de diseño}: Se planifican los componentes y las interfaces con un diseño detallado
+	\item \textbf{Codificación}: Completadas estas fases inicial el desarrollo de la arquitectura en software
+\end{itemize}
+
+\hfill \break
+\justifying
+En la corriente de pruebas del lado derecho(Prueba e integración del proyecto) consiste de:
+\begin{itemize}
+	\item \textbf{Pruebas unitarias}: Permiten declarar que un módulo esta listo y terminado: Lógica de módulos(caja blanca), Funciones(Caja negra)
+	\item \textbf{Pruebas de integración}: Implican una progresión ordenada de pruebas que van desde los componentes o módulos y que culmina en el sistema completo
+	\item \textbf{Pruebas de Sistema}: Se verifica el cumplimiento de los objetivos y se validan los desajustes entre el software y los requisitos planteados
+	\item \textbf{Pruebas de Aceptación}: El usuario final comprueba que el sistema hace lo especificado en el contrato
+\end{itemize}
 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=14cm]{Imagenes/Modelo_componentes.jpeg}
-	\caption{Diagrama mostrando el flujo iterativo y evolutivo de las etapas consideradas por la Metodología basada en el desarrollo por Componentes}
-	\label{Metodologia_componentes}
+	\includegraphics[width=16cm]{Imagenes/Modelo_V.png}
+	\caption{Diagrama mostrando las fases del Modelo V}
+	\label{Modelo_V}
 \end{figure}

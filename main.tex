@@ -11,11 +11,11 @@
 \usepackage{graphicx}
 % Justificar texto
 \usepackage{ragged2e}
-% Biblatex
 % Multiple columns
 \usepackage{multicol,blindtext}
-% Array package for tables
+% Packages for tables
 \usepackage{array}
+\usepackage{longtable}
 % Color for tables
 \usepackage[table]{xcolor}
 \usepackage{colortbl}
@@ -26,7 +26,7 @@
 
 \hfill\break
 \justifying
-\textbf{Resumen} - Las afectaciones del habla en adultos mayores suelen originarse después de una lesión o accidente comunmente con daño cerebral en el lóbulo izquierdo, limitando o completamente impidiendo la correcta comunicación verbal de las personas. Este proyecto propone un prototipo de \textit{wearable} y sistema embebido como herramienta de apoyo para pacientes con afectación del habla mediante la traducción de un sencillo lenguaje motriz con una mano a letras, sílabas y palabras, primero en texto y finalmente reproduciendo en audio como discurso.
+\textbf{Resumen} - Las afectaciones del habla en adultos mayores suelen originarse después de una lesión o accidente comunmente con daño cerebral en el lóbulo izquierdo, limitando o completamente impidiendo la correcta comunicación verbal de las personas. Este proyecto propone un prototipo de \textit{wearable} y sistema embebido como herramienta de apoyo para pacientes con afectación del habla mediante la traducción de un código motriz con una mano a letras del alfabeto como texto y finalmente reproduciendo los fonemas de las palabras como discurso.
 
 \hfill \break
 \textbf{Palabras clave} - Afectaciones del habla, \textit{Machine Learning}, Sistemas Embebidos, \textit{Text-to-Speech}
@@ -64,6 +64,9 @@
 \newpage
 \hfill \break
 {\fontsize{12}{14}\textbf{6. Cronograma}}
+\hfill \break
+\justifying
+\input{Secciones/Cronograma}
 
 
 \newpage
