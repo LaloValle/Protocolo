@@ -1,37 +1,30 @@
 \hfill \break
 \justifying
-Las afectaciones en el habla en personas que han superado la etapa de niñez(adolescentes, adultos jóvenes, adultos y adultos mayores) suelen originarse principalmente por accidentes o lesiones que dañaron alguna zona de la masa encefálica, más comunmente afectando las funciones del lenguaje cuando se localiza en el hemisferio izquierdo del cerebro, ya sea por la falta de circulación del torrente sanguíneo, daño directo en las conexiones entre hemisferios, etc[7]. Se han estudiado para estas condiciones sus diferentes ramificaciones[7], mencionándose aquellas reconocidas como las que encontrarían mayor beneficio en el trabajo propuesto:
+Las afectaciones en el habla en personas que han superado la etapa de niñez(adolescentes, adultos jóvenes, adultos y adultos mayores) suelen originarse principalmente por accidentes o lesiones que dañaron alguna zona de la masa encefálica, más comunmente afectando las funciones del lenguaje cuando se localiza en el hemisferio izquierdo del cerebro. Estos daños pueden darse por la falta de circulación del torrente sanguíneo, daño directo en las conexiones entre hemisferios, etc[2]. Se han estudiado para estas condiciones sus diferentes ramificaciones[2], mencionándose aquellas reconocidas como las que encontrarían mayor beneficio en el trabajo propuesto:
 \begin{itemize}
 	%
 	%	Afasias
 	%
 	\item \textbf{Afasias}:
 		\begin{itemize}
-			\item \textbf{Afasia de Broca}[9,10]: El área de Broca es una región localizada en el lóbulo cerebral izquierdo y está relacionada con el uso del lenguaje. Específicamente la afasia en la que se sufre un daño en esta área, tienen dificultad para la expresión fluida, la pronunciación y modulación del tono de voz. La producción de los sonidos correctos y encontrar las palabras correctas suelen ser trabajos laboriosos, sin embargo la compresión del habla de otras personas es relativamente buena, por lo que entender textos o lenguaje oral en comparación con su capacidad de hablar y escribir se encuentra mejor conservada.
-			\item \textbf{Afasia motora transcortical}[9]: Parecida a la afasia de Broca en la dificultad del paciente para la emisión de un lenguaje fluido y coherente conservando una relativa buena compresión de lenguaje, esta afectación difiere en el hecho de que los pacientes si son capaces de repetir lo que se les dice, mientras que aquellos que sufren de afasia de Broca son incapaces de repetir frases.
+			\item \textbf{Afasia de Broca}[4,13]: El área de Broca es una región localizada en el lóbulo cerebral izquierdo y está relacionada con el uso del lenguaje. Específicamente la afasia en la que se sufre un daño en esta área, tienen dificultad para la expresión fluida, la pronunciación y modulación del tono de voz. La producción de los sonidos correctos y encontrar las palabras correctas suelen ser trabajos laboriosos, sin embargo la compresión del habla de otras personas es relativamente buena, por lo que entender textos o lenguaje oral en comparación con su capacidad de hablar y escribir se encuentra mejor conservada.
+			\item \textbf{Afasia motora transcortical}[4]: Parecida a la afasia de Broca en la dificultad del paciente para la emisión de un lenguaje fluido y coherente conservando una relativa buena compresión de lenguaje, esta afectación difiere en el hecho de que los pacientes si son capaces de repetir lo que se les dice, mientras que aquellos que sufren de afasia de Broca son incapaces de repetir frases.
 		\end{itemize}
 	%
 	%	Apraxia
 	%
 	\item \textbf{Apraxia:}
 	\begin{itemize}
-		\item \textbf{Apraxia bucofacial u orofacial}[11]: Incapacidad de realizar movimientos faciales a voluntad, como pasar la lengua por los labios, silbar, toser o guiñar el ojo.
+		\item \textbf{Apraxia bucofacial u orofacial}[5]: Incapacidad de realizar movimientos faciales a voluntad, como pasar la lengua por los labios, silbar, toser o guiñar el ojo.
 		\item \textbf{Apraxia Verbal}[11]: Dificultad para coordinar los movimientos de la boca y del habla
 	\end{itemize}
 	%
 	% 	Disartria
 	%
-	\item \textbf{Disartria}: Trastorno de la ejecución motora del habla, derivado de un problema neurológico debido a la presencia de un accidente cerebrovascular, traumas craneoencefálicos u otras lesiones cerebrales.[7] \\ Entre los síntomas se tienen el habla entrecortada jadeante, irregular, imprecisa o monótona, lenta, o rápida y "entre dientes", entonación anormal, cambios del timbre del voz, ronquera, babeo o escaces del control de la saliva y la movilidad limitada de la lengua, los labios y la mándibula.[13,14]
+	\item \textbf{Disartria}: Trastorno de la ejecución motora del habla, derivado de un problema neurológico debido a la presencia de un accidente cerebrovascular, traumas craneoencefálicos u otras lesiones cerebrales.[2] \\ Entre los síntomas se tienen el habla entrecortada jadeante, irregular, imprecisa o monótona, lenta, o rápida y "entre dientes", entonación anormal, cambios del timbre del voz, ronquera, babeo o escaces del control de la saliva y la movilidad limitada de la lengua, los labios y la mándibula.[7,8]
 \end{itemize}
 
 \hfill \break
 \justifying
-Buscando proporcionar una herramienta de apoyo para la comunicación a pacientes que han recientemente sufrido alguna accidente u lesión como las mencionadas anteriormente, no se enfoca el proyecto a un grupo de la sociedad con un amplio desarrollo del lenguaje de señas tal como suele ser común con las personas sordomudas. Esta propuesta consiste en un prototipo simplificado que se apoyado de la idea de un sujetador de los dispositivos hardware con orificios para los dedos tipo \textit{wearable} y no un guante completo, de forma que el componente principal de sensado, el SoC micro:bit, se encuentra en el dorso de la mano evitando cualquier interferencia en la sensibilidad de dedos o palma, o cualquier limitación motriz en los dedos. Todo esto hace al prototipo sencillo de usar, además de ser estético con la implementación de LEDs en el SoC para indicar ciertas acciones, volviendolo también sencillo en la interacción.
-
-\hfill \break
-\justifying
-Precisamente y debido a la sencillez del prototipo, se utiliza unicamente el sensor acelerómetro, descartando el agregado de otro tipo de sensores como los de flexión etc.
-
-\hfill\break
-\justifying
-La creación del código contextualizado en patrones de movimiento, le servirá al usuario para indicar el sonido que desea sea reproducido, y debido a que la forma más intuitiva para la mayor parte de la población(cerca del 95\% de la población que es alfabeta en México[15]) la asociación de la pronunciación de las letras en las palabras es natural mediante la relación en su representación escrita, se descarta un desglose directo en fonémas de las letras o palabras, siendo prácticamente desconocido un marco referencial como el Alfabeto Fonético Internacional y las asignaciones de los sonidos propios del español.
+Buscando proporcionar una herramienta de apoyo para la comunicación a pacientes que han recientemente sufrido alguna accidente u lesión como las mencionadas anteriormente, no se enfoca el proyecto a un grupo de la sociedad con un amplio desarrollo del lenguaje de señas tal como suele ser común con las personas sordomudas. Esta propuesta consiste en un prototipo simplificado que se apoyado de la idea de un sujetador de los dispositivos hardware con orificios para los dedos tipo \textit{wearable}, no un guante completo. Aprovechando la anatomía del \textit{wearable}, el componente SoC micro:bit, se encontraría en el dorso de la mano, posición en la que se evita cualquier interferencia motriz o de sensibilidad en dedos y palma.
+Tanto la implementación de los LEDs del SoC para indicar ciertas acciones acompañadas de animaciones buscando aportar una estética moderna y de interacción sencilla para el usuario; Como la sencillez de este con el uso casi exclusivo del sensor acelerómetro en un intento de evitar sensores extras como los de flexión, atienden a la filosofía de disminuir los puntos negativos identificados en proyectos posteriores proponiendo estrategias que los eviten, o incluso, puedan aportar nuevos beneficios al prototipo.
