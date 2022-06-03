@@ -1,6 +1,6 @@
 \hfill \break
 \justifying
-La solución que se propone en este trabajo consiste en un prototipo \textit{wearable} sensor, que utiliza el SoC micro:bit y el sensor acelerómetro integrado para el muestreo de los patrones de movimientos realizados por el usuario, con el objetivo de realizar su clasificación mediante un sistema embebido que permita identificar la clase textual del patrón, usando en conjunto el algoritmo DTW y un modelo de Inteligencia Artificial. A partir de esta clasificación, se realiza la conformación de palabras y frases en texto, que finalmente son reproducibles sonoramente en una tarjeta de sonido cuando se hace uso de los servicios que ofrecen el proyecto \textit{TTS de Mozilla} en la red local, o los servicios especializados de \textit{Text-to-speech} ofrecidos por las nubes de compañías privadas.
+La solución que se propone en este trabajo consiste en un prototipo \textit{wearable} sensor, que utiliza el SoC micro:bit y el sensor acelerómetro integrado para el muestreo de los patrones de movimientos realizados por el usuario, con el objetivo de realizar su clasificación mediante un sistema embebido que permita identificar la clase textual del patrón, usando en conjunto el algoritmo DTW y un modelo de Inteligencia Artificial. A partir de esta clasificación, se realiza la conformación de palabras y frases en texto, que finalmente son reproducibles sonoramente en una tarjeta de sonido cuando se hace uso de los servicios que ofrecen el proyecto \textit{TTS de Mozilla} en la red local, o los servicios especializados de texto a voz ofrecidos por las nubes de compañías privadas.
 
 \hfill \break
 \justifying
@@ -17,7 +17,7 @@ Desglose de los productos particulares requeridos para cumplir la descripción d
 		\end{itemize}
 		El prototipo \textit{weareable} al convertirse en el componente con el que ocurrirá la mayor parte de la interacción del usuario, funge como la interfaz principal de la solución, ofreciendo posibilidades para la configuraciones de unos pocos parámetros con el uso de los botones integrados en el SoC, y la visualización de resultados de acciones mediante animaciones en su arreglo de LEDs.
 	
-	\item El sistema embebido permitirá la comunicación entre el prototipo sensor, la clasificación de los patrones y la consulta de los servicios de \textit{Text-to-Speech}. Su conformación en la primer propuesta de solución considera al menos los siguientes componentes:
+	\item El sistema embebido permitirá la comunicación entre el prototipo sensor, la clasificación de los patrones y la consulta de los servicios de texto a voz. Su conformación en la primer propuesta de solución considera al menos los siguientes componentes:
 	\begin{itemize}
 		\item Prototipo sensor \textit{wearable}
 		\item Mini PC Raspberry Pi 4
@@ -26,9 +26,9 @@ Desglose de los productos particulares requeridos para cumplir la descripción d
 	
 	\item La identificación de los patrones de movimiento a sus respectivas clases textuales, se podrá lograr implementando de bilbliotecas especializadas, el algoritmo DTW y un modelo de Inteligencia Artificial, que usados en conjunto permitan la clasificación eficiente de los patrones.
 	
-	\item La configuración de los servicios de \textit{Text-to-Speech} en red local con el proyecto \textit{TTS de Mozilla}, y el servicio especializado en la nube, permitirá el uso de al menos 2 voces femeninas y 2 voces masculinas en diferentes rangos de tono de voz y edad, al afinarse la combinación de los valores de los parámetros modificables en estos servicios.
+	\item La configuración de los servicios de texto a voz en red local con el proyecto \textit{TTS de Mozilla}, y el servicio especializado en la nube, permitirá el uso de al menos 2 voces femeninas y 2 voces masculinas en diferentes rangos de tono de voz y edad, al afinarse la combinación de los valores de los parámetros modificables en estos servicios.
 	
-	\item Artículo de publicación con el desarrollo de la solución propuesta
+	\item Artículo de publicación con el desarrollo de la solución propuesta.
 \end{enumerate}
 
 \begin{figure}[!h]
